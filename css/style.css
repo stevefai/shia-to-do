@@ -211,8 +211,8 @@ ul.failed {
 	}
 
 	#todo-input {
-		font-size: 4rem;
-		padding: 4rem 4rem;
+		font-size: 3.5rem;
+		padding: 3.5rem 4rem;
 	}
 
 	#sort-by, button {
@@ -231,7 +231,7 @@ ul.failed {
 	#get-motivated {
 		padding: 2rem 2rem;
 		margin-top: 4rem;
-		font-size: 4rem;
+		font-size: 3rem;
 		border-radius: 0px;
 	}
 
