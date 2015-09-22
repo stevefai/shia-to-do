@@ -211,26 +211,27 @@ ul.failed {
 	}
 
 	#todo-input {
-		font-size: 2.5rem;
-		padding: 2rem 3.5rem;
+		font-size: 4rem;
+		padding: 4rem 4rem;
 	}
 
 	#sort-by, button {
-		font-size: 1.5rem;
+		font-size: 3rem;
 	}
 
 	#sort-by, ul.items-list li {
-		padding: 2rem 4rem;
+		padding: 3rem 4rem;
 	}
 
 	 #sort-by-options li a {
-	 	padding: 2rem 4rem;
-	 	font-size: 1.5rem;
+	 	padding: 3rem 4rem;
+	 	font-size: 3rem;
 	 }
 
 	#get-motivated {
-		padding: 2rem 4rem;
-		margin-top: 3rem;
+		padding: 2rem 2rem;
+		margin-top: 4rem;
+		font-size: 4rem;
 		border-radius: 0px;
 	}
 
@@ -259,7 +260,7 @@ ul.failed {
 	}
 
 	ul.items-list p.item-content {
-		font-size: 2.5rem;
+		font-size: 4rem;
 		color: #666;
 		float: left;
 	}
@@ -268,7 +269,7 @@ ul.failed {
 		opacity: 0.5;
 		display: none;
 		position: absolute;
-		top: 1.8rem;
+		top: 3rem;
 		right: 1rem;
 	}
 
@@ -294,9 +295,9 @@ ul.failed {
 	.options a, .item-info {
 		float: left;
 		color: #aaa;
-		margin-right: 1.5rem;
-		margin-top: .5rem;
-		font-size: 1.5rem;
+		margin-right: 2em;
+		margin-top: .7rem;
+		font-size: 2rem;
 	}
 
 	.options a:hover {
