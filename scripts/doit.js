@@ -118,6 +118,23 @@ giveupAudioList.push(new Audio('resources/stopgivingup.mp3'));
 giveupAudioList.push(new Audio('resources/stop.mp3'));
 
 
+var isPlaying = function() {
+	for (var audioIndex = 0; audioIndex < audioList.length; audioIndex++) {
+		var a = audioList[audioIndex];
+		if (a.duration > 0 && !a.paused) {
+			return true;
+		}
+	}
+	for (var audioIndex = 0; audioIndex < giveupAudioList.length; audioIndex++) {
+		var a = giveupAudioList[audioIndex];
+		if (a.duration > 0 && !a.paused) {
+			return true;
+		}
+	}
+	return false;
+}
+
+
 /* COMPLETE / FAIL */
 
 $("ul.active").on('click', '.options a', function() {
@@ -135,8 +152,10 @@ $("ul.active").on('click', '.options a', function() {
 	else {
 		addedTo = $('ul.failed');
 		msg = 'Failed on';
-		var audioIndex = Math.floor(Math.random() * giveupAudioList.length);
-		giveupAudioList[audioIndex].play();
+		if (!isPlaying()) {
+			var audioIndex = Math.floor(Math.random() * giveupAudioList.length);
+			giveupAudioList[audioIndex].play();			
+		}
 		localName = 'failed';
 	}
 
@@ -157,8 +176,10 @@ $("ul.active").on('click', '.options a', function() {
 
 $('button#get-motivated').click(function () {
 	//var audio = document.getElementsByTagName("audio")[1];
-	var audioIndex = Math.floor(Math.random() * audioList.length);
-	audioList[audioIndex].play();
+	if (!isPlaying()) {
+		var audioIndex = Math.floor(Math.random() * audioList.length);
+		audioList[audioIndex].play();
+	}
 });
 
 })();
