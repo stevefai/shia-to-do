@@ -205,7 +205,7 @@ ul.failed {
 	display: none;
 }
 
-@media only screen and (max-device-width: 500px) {
+@media only screen and (max-width: 500px) {
 	.wrap {
 		max-width: none;
 		position: relative;
@@ -301,9 +301,9 @@ ul.failed {
 	.options a, .item-info {
 		float: left;
 		color: #aaa;
-		margin-right: 2em;
+		margin-right: 2rem;
 		margin-top: .7rem;
-		font-size: 2rem;
+		font-size: 2.5rem;
 	}
 
 	.options a:hover {
