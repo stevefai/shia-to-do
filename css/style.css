@@ -210,7 +210,7 @@ ul.failed {
 		max-width: none;
 		position: relative;
 	}
-
+/*
 	header {
 		position: relative;
 	}
@@ -318,4 +318,5 @@ ul.failed {
 	ul.failed {
 		display: none;
 	}
+*/
 }
