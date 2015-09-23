@@ -204,7 +204,7 @@ ul.failed {
 	display: none;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-device-width: 500px) {
 	.wrap {
 		max-width: none;
 		position: relative;
