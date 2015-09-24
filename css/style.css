@@ -141,6 +141,7 @@ button:focus, input:focus {
 
 #shia-img {
 	float: left;
+	max-width: 50%;
 }
 
 img.border {
