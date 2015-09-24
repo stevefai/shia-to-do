@@ -12,6 +12,7 @@
 header {
 	background: #272A39;
 	overflow: auto;
+	position: relative;
 }
 
 li {
@@ -112,6 +113,7 @@ a {
 	padding: 1rem;
 	float: left;
 	margin-top: 3rem;
+	margin-bottom: 2rem;
 	border-radius: 6px;
 }
 
@@ -141,7 +143,9 @@ button:focus, input:focus {
 
 #shia-img {
 	float: left;
-	max-width: 50%;
+	max-width: 45%;
+	position: absolute;
+	bottom: 0;
 }
 
 img.border {
